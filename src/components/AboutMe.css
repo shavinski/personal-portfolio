@@ -7,7 +7,7 @@
 
 .container-about-info {
     /* max-width: var(--max-width-text); */
-    width: min(90%, 600px);
+    width: min(90%, 700px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,9 +25,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* width: var(--max-width-text); */
-    width: min(90%, 600px);
-    margin: var(--m-5);
+    width: min(90%, 700px);
     gap: var(--gap-standard);
 }
 

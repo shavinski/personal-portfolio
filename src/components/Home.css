@@ -1,3 +1,11 @@
+.home {
+    background-image: url(https://line204.com/wp-content/uploads/2016/05/deep-dark-space-destkop-backgrounds.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
 .container-home {
     padding-top: 10vh;
     height: 90vh;
@@ -14,16 +22,8 @@
     margin: var(--m-1);
 }
 
-.profile-photo {
-    background: var(--light-yellow);
-    background-image: url(../Images/laptopBit.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 220px;
-    height: 220px;
-    border-radius: 30%;
-    background-color: var(--contrast);
+.jakob {
+    color: var(--contrast);
 }
 
 .container-socials {
@@ -41,19 +41,19 @@
 
 .container-info {
     display: flex;
-    line-height: 25px;
     flex-direction: column;
     gap: var(--gap-standard);
-    width: min(90%, 600px);
+    width: min(90%, 700px);
 }
 
 .info-intro {
-    font-size: clamp(1.9em, 1vw + 1rem, 2.5em);
-    line-height: 38px;
+    font-size: clamp(1.5em, 1vw + 1.5rem, 3em);
+    line-height: 4.4vh
 }
 
 .info-details {
-    font-size: var(--font-small);
+    font-size: clamp(1.2em, 1vw + .8rem, 2em);
+    line-height: 3.5vh;
 }
 
 .connect {

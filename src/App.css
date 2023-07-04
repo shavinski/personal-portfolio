@@ -188,16 +188,28 @@ button {
   font-family: Russo;
 }
 
-section {
+.aboutme,
+.skills,
+.projects,
+.contact{
   margin: 3em 1em 3em;
 }
+
+.container-about-info,
+.container-about-knowledge,
+.container-coding-langs,
+.project-card,
+.container-contact {
+  margin-top: 2em;
+}
+
 
 .title {
   font-size: var(--font-large);
   -webkit-text-stroke: .6px var(--contrast);
   color: var(--secondary);
   margin: var(--m-3);
-  text-shadow: 0px 0px 1.5vw rgb(255, 232, 60);
+  text-shadow: 0px 1px 10px rgb(255, 232, 60);
 }
 
 ::-webkit-scrollbar {

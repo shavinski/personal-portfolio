@@ -27,6 +27,7 @@
     align-items: center;
     width: min(90%, 700px);
     gap: var(--gap-standard);
+    margin-bottom: 3em;
 }
 
 .container-back-end,

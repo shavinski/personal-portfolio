@@ -5,7 +5,27 @@
     justify-content: center;
 }
 
+.tech-container-title {
+    font-size: var(--font-medium);
+    margin: 1em 0 1em;
+}
 
+.tech-container {
+    display: flex;
+    flex-direction: column;
+    width: min(90%, 700px);
+    margin-bottom: 3em;
+}
+
+.container-languages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min(45%, 150px));
+    gap: 15px;
+    background-color: var(--secondary-middle);
+    border-radius: 20px;
+    padding: var(--p-2);
+    box-shadow: 0 10px 15px black;
+}
 
 .button-resume {
     display: flex;

@@ -15,32 +15,47 @@ function Skills() {
 
                 <div className='tech-container'>
                     <div>
-                        <h1>Languages</h1>
+                        <h1 className='tech-container-title'>Languages</h1>
                     </div>
-                    <div className='languages'>
+
+                    <div className='container-languages'>
                         {languages.map((tech) => (
-                            <div>
-                                <TechContainer key={uuidv4()} name={tech.name} svg={tech.svg} />
-                            </div>
+                            <TechContainer
+                                key={uuidv4()}
+                                name={tech.name}
+                                svg={tech.svg} />
                         ))}
                     </div>
                 </div>
 
-                {/* <div className='libraries'>
-                    <h1>Libraries</h1>
-                    {libraries.map((tech) => (
-                        <div>
-                            <TechContainer name={tech.name} svg={tech.svg} />
-                        </div>
-                    ))}
+                <div className='tech-container'>
+                    <div>
+                        <h1 className='tech-container-title'>Libraries</h1>
+                    </div>
+
+                    <div className='container-languages'>
+                        {libraries.map((tech) => (
+                            <TechContainer
+                                key={uuidv4()}
+                                name={tech.name}
+                                svg={tech.svg} />
+                        ))}
+                    </div>
                 </div>
 
-                <div className='tools'>
-                    <h1>Tools / Frameworks </h1>
-                    {tools.map((tech) => (
-                        <TechContainer name={tech.name} svg={tech.svg} />
-                    ))}
-                </div> */}
+                <div className='tech-container'>
+                    <div>
+                        <h1 className='tech-container-title'>Tools / Frameworks </h1>
+                    </div>
+                    <div className='container-languages'>
+                        {tools.map((tech) => (
+                            <TechContainer
+                                key={uuidv4()}
+                                name={tech.name}
+                                svg={tech.svg} />
+                        ))}
+                    </div>
+                </div>
             </div>
         </section>
     )

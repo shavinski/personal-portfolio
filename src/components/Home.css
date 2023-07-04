@@ -63,7 +63,7 @@
     padding: var(--p-1);
     border-radius: 10px;
     background-color: var(--secondary-middle);
-    box-shadow: 0 8px 20px black;
+    box-shadow: 0 3px 10px rgb(142, 142, 142);
     display: flex;
     justify-content: center;
     align-items: center;

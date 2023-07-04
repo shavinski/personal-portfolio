@@ -137,6 +137,7 @@ table {
   --secondary: rgb(29, 29, 29);
   --secondary-middle: rgb(50, 50, 50);
   --secondary-light: white;
+  --secondary-washed: rgb(93, 93, 93);
   --contrast: rgb(217, 196, 39);
 
   --m-1: 10px;

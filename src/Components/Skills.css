@@ -1,0 +1,61 @@
+.container-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3em 1em 3em;
+}
+
+.container-coding-langs {
+    background-color: var(--secondary-middle);
+    box-shadow: 0 8px 20px black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    width: min(90%, 600px);
+    border-radius: 20px;
+}
+
+.container-lang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: var(--m-4);
+}
+
+.container-coding-langs svg {
+    width: 45px;
+}
+
+.button-resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-resume button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: var(--p-2);
+    border-radius: 20px;
+    margin: var(--m-2);
+    font-size: var(--font-small);
+    width: 200px;
+}
+
+@media screen and (min-width: 48em) {
+    .container-coding-langs {
+        max-width: 40%;
+    }
+
+    .button-resume {
+        max-width: 20%
+    };
+}
+
+/* large */
+@media screen and (min-width: 64em) {
+
+}

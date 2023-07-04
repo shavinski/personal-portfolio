@@ -1,0 +1,75 @@
+.container-home {
+    padding-top: 10vh;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--m-1);
+}
+
+.profile-photo {
+    background: var(--light-yellow);
+    background-image: url(../Images/laptopBit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 220px;
+    height: 220px;
+    border-radius: 30%;
+    background-color: var(--contrast);
+}
+
+.container-socials {
+    display: flex;
+    margin-top: var(--m-1);
+    gap: var(--gap-standard);
+}
+
+.social-logo {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    color: var(--secondary-light);
+}
+
+.container-info {
+    display: flex;
+    line-height: 25px;
+    flex-direction: column;
+    gap: var(--gap-standard);
+    width: min(90%, 600px);
+}
+
+.info-intro {
+    font-size: clamp(1.9em, 1vw + 1rem, 2.5em);
+    line-height: 38px;
+}
+
+.info-details {
+    font-size: var(--font-small);
+}
+
+.connect {
+    text-decoration: none;
+    color: white;
+    margin: var(--m-3);
+    padding: var(--p-1);
+    border-radius: 10px;
+    background-color: var(--secondary-middle);
+    box-shadow: 0 8px 20px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-standard);
+}
+
+.connect:hover {
+    cursor: pointer;
+}

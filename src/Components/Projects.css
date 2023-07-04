@@ -1,0 +1,67 @@
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: min(90%, 600px);
+    margin: 3em 1em 3em;
+}
+
+.card-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px 20px 0 0;
+}
+
+.project-one {
+    background-image: url(https://eletiofe.com/wp-content/uploads/2022/12/339872-twitter-blue-explained-what-is-it-how-much-does-it-cost.jpg);
+}
+
+.project-two {
+    background-image: url(https://getfive.com/wp-content/uploads/2019/08/job-searching.jpg);
+}
+
+.card-info {
+    background-color: var(--secondary-middle);
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 10px 15px black;
+}
+
+.card-info h2 {
+    font-size: var(--font-medium);
+    margin-bottom: 12px;
+}
+
+.card-info p {
+    font-size: var(--font-small);
+    margin-bottom: 8px;
+}
+
+.card-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--contrast);
+    padding: 5px;
+    width: 70px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: var(--font-small);
+    transition: transform 0.2s ease;
+}
+
+.card-btn:hover {
+    transform: scale(1.1);
+}
+
+.project-card:has()

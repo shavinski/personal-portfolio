@@ -1,0 +1,40 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.form-input {
+    font-family: Russo;
+    border-radius: 7px;
+    padding: 12px;
+    font-size: var(--font-small);
+}
+
+.form-label {
+    font-size: var(--font-small);
+}
+
+form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    padding: var(--p-1);
+    border-radius: 7px;
+    font-size: 1.3em;
+    margin-bottom: 2em;
+}
+
+
+
+
+
+

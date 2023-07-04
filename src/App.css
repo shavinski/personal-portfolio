@@ -1,0 +1,243 @@
+/* CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*******************************************/
+
+:root {
+  --primary: black;
+  --secondary: rgb(29, 29, 29);
+  --secondary-middle: rgb(50, 50, 50);
+  --secondary-light: white;
+  --contrast: rgb(217, 196, 39);
+
+  --m-1: 10px;
+  --m-2: 20px;
+  --m-3: 30px;
+  --m-4: 40px;
+  --m-5: 50px;
+
+  --p-1: 10px;
+  --p-2: 20px;
+  --p-3: 30px;
+  --p-4: 40px;
+  --p-5: 50px;
+
+  --font-large: 3em;
+  --font-medium: 2em;
+  --font-small: 1.2em;
+
+  --max-width-text: 90%;
+
+  --gap-standard: 20px;
+}
+
+@font-face {
+  font-family: Russo;
+  src: url(./fonts/RussoOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: Starwars;
+  src: url(./fonts/Rubik-VariableFont_wght.ttf);
+}
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+  color: white;
+}
+
+body {
+  width: 100%;
+  background-color: var(--secondary);
+  overflow-x: hidden;
+  font-family: Russo;
+}
+
+button {
+  font-family: Russo;
+}
+
+section {
+  margin: 3em 1em 3em;
+}
+
+.title {
+  font-size: var(--font-large);
+  -webkit-text-stroke: .6px var(--contrast);
+  color: var(--secondary);
+  margin: var(--m-3);
+  text-shadow: 0px 0px 1.5vw rgb(255, 232, 60);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--contrast);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* .neon {
+  color: var(--contrast);
+  font-size: 9vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw var(--contrast);
+}
+
+.neon {
+  animation: neon 1.5s ease infinite;
+  -moz-animation: neon 1.5s ease infinite;
+  -webkit-animation: neon 1.5s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw var(--contrast), 0 0 1vw var(--contrast), 0 0 4vw var(--contrast), 0 0 6vw var(--contrast), 0 0 .4vw #fdfdfd, .5vw .5vw .1vw #87732d;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw rgb(173, 155, 13), 0 0 1.5vw rgb(173, 155, 13), 0 0 5vw rgb(173, 155, 13), 0 0 5vw rgb(173, 155, 13), 0 0 .2vw rgb(173, 155, 13), .5vw .5vw .1vw #40340A;
+    color: #806914;
+  } */
+/* } */

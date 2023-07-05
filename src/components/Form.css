@@ -12,9 +12,15 @@ form {
 
 .form-input {
     font-family: Russo;
+    border: none;
     border-radius: 7px;
     padding: 12px;
     font-size: var(--font-small);
+}
+
+.form-input:focus {
+    outline: none;
+    border: 3px solid var(--contrast);
 }
 
 .form-label {

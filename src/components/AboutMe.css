@@ -27,7 +27,7 @@
     align-items: center;
     width: min(90%, 700px);
     gap: var(--gap-standard);
-    margin-bottom: 3em;
+    margin: 3em 0 3em;
 }
 
 .container-back-end,
@@ -65,7 +65,7 @@
     .container-about-knowledge {
         /* max-width: 40%; */
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 

@@ -3,8 +3,8 @@ const projects = [
     {   
         image: "https://getfive.com/wp-content/uploads/2019/08/job-searching.jpg",
         title: 'Jobly',
-        description: 'A job searching app where users can login, search for companies, and search for open jobs from these companies!',
-        note: 'Note that I am using a free online database which means my project will be in sleep mode and will require 10-30 seconds to load'
+        description: 'A job searching app where users can login, search for companies, and search for open jobs!',
+        note: 'Note that I am using a free online cloud database so my projects will require 10-30 seconds to load upon start'
     },
 
     {

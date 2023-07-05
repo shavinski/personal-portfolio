@@ -137,7 +137,7 @@ table {
   --secondary: rgb(29, 29, 29);
   --secondary-middle: rgb(50, 50, 50);
   --secondary-light: white;
-  --secondary-washed: rgb(93, 93, 93);
+  --secondary-washed: rgb(108, 108, 108);
   --contrast: rgb(217, 196, 39);
 
   --m-1: 10px;
@@ -207,10 +207,10 @@ button {
 
 .title {
   font-size: var(--font-large);
-  -webkit-text-stroke: .6px var(--contrast);
-  color: var(--secondary);
+  -webkit-text-stroke: 1px rgb(148, 157, 20);
+  color: var(--contrast);
   margin: var(--m-3);
-  text-shadow: 0px 1px 10px rgb(255, 232, 60);
+  text-shadow: 0px 1px 30px rgb(228, 216, 49);
 }
 
 ::-webkit-scrollbar {

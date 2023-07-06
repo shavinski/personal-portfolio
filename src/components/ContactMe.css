@@ -1,9 +1,10 @@
 .contact {
+    position: relative;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 .container-contact {
@@ -11,9 +12,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: var(--max-width-text);
     padding: var(--p-1);
     border-radius: 20px;
+    width: min(90%, 700px);
+    height: 100%;
 }
 
 .container-contact-info {
@@ -22,15 +24,26 @@
     align-items: flex-start;
     gap: 20px;
     font-size: var(--font-small);
-    margin: 0em 1em 2em ;
+    margin: 0em .5em 2em;
 }
 
-.contact-info {
+.contact-info{
+    display: flex;
+    /* align-items: center */
+    gap: 10px;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-child-container {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-
-
-
+.container-form {
+    width: min(100%, 400px);
+}

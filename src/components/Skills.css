@@ -1,4 +1,5 @@
 .container-skills {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +20,8 @@
 
 .container-languages {
     display: grid;
-    grid-template-columns: repeat(auto-fit, min(45%, 150px));
+    /* Played around till things were even in grid containers this works */
+    grid-template-columns: repeat(auto-fit, min(47%, 153px));
     gap: 15px;
     background-color: var(--secondary-middle);
     border-radius: 20px;
@@ -45,17 +47,10 @@
     width: 200px;
 }
 
+/* Medium Screen */
 @media screen and (min-width: 48em) {
-    .container-coding-langs {
-        max-width: 40%;
-    }
-
-    .button-resume {
-        max-width: 20%
-    };
-}
-
-/* large */
-@media screen and (min-width: 64em) {
+    /* .container-coding-langs {
+         max-width: 40%; 
+    } */
 
 }

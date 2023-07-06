@@ -156,7 +156,7 @@ table {
   --font-medium: 2em;
   --font-small: 1.2em;
 
-  --max-width-text: 90%;
+  /* --max-width-text: 90%; */
 
   --gap-standard: 20px;
 }
@@ -206,23 +206,34 @@ button {
 
 
 .title {
-  font-size: var(--font-large);
+  /* font-size: var(--font-large); */
+  font-size: clamp(var(--font-medium), 1vw + 2.5rem, var(--font-large));
   -webkit-text-stroke: 1px rgb(148, 157, 20);
   color: var(--contrast);
-  margin: var(--m-3);
+  margin: var(--m-4);
   text-shadow: 0px 1px 30px rgb(228, 216, 49);
+  z-index: 3;
+}
+
+.number-section {
+  position: absolute;
+  font-size: 8.5em;
+  opacity: .6;
+  color: var(--secondary-light);
+  top: 0;
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: black;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--contrast);
+  border-radius: 10px;
 }
 
 /* Handle on hover */

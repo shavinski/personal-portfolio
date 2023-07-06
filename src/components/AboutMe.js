@@ -8,6 +8,9 @@ function AboutMe() {
     return (
         <section className='aboutme' id='aboutme'>
             <div className='container-aboutme'>
+
+                <div className='number-section'>01</div>
+
                 <div className='aboutme-title title'>
                     <h1>About Me</h1>
                 </div>
@@ -16,7 +19,6 @@ function AboutMe() {
                     <p>Pinterest ramps affogato subway tile drinking vinegar hammock pariatur poke deserunt meditation pickled man braid. Locavore craft beer ugh cold-pressed PBR&B pop-up. Vibecession cray adaptogen aliquip live-edge in. Sustainable photo booth poutine, celiac bruh single-origin coffee aute shaman cillum plaid live-edge. </p>
                     <p>I'm baby dolore in sus vape activated charcoal officia PBR&B vegan veniam schlitz cred try-hard. Hell of knausgaard minim, lo-fi synth vinyl mustache. Drinking vinegar dolore knausgaard quis, VHS viral scenester culpa semiotics. Portland incididunt elit aute, activated charcoal laborum blackbird spyplane gentrify in waistcoat brunch cray gorpcore non slow-carb. Occaecat leggings try-hard readymade vaporware trust fund.</p>
                 </div>
-
 
                 <div className='container-about-knowledge'>
                     {jobs.map((job) => (

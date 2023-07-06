@@ -9,6 +9,9 @@ function Skills() {
     return (
         <section className="skills" id="skills">
             <div className='container-skills'>
+
+                <div className='number-section'>02</div>
+
                 <div className='skills-title title'>
                     My Skills
                 </div>

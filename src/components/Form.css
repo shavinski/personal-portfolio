@@ -32,11 +32,15 @@ form button {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 150px;
+    /* width: 150px; */
     padding: var(--p-1);
     border-radius: 7px;
     font-size: 1.3em;
     margin-bottom: 2em;
+}
+
+form button:hover {
+    cursor: pointer;
 }
 
 

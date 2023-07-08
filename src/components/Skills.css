@@ -28,23 +28,31 @@
     padding: var(--p-2);
     box-shadow: 0 10px 15px black;
 }
+.resume-link {
+    text-decoration: none;
+}
 
 .button-resume {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.button-resume button {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     gap: 10px;
     padding: var(--p-2);
     border-radius: 20px;
     margin: var(--m-2);
     font-size: var(--font-small);
-    width: 200px;
+    width: 150px;
+    background-color: var(--contrast);
+    color: var(--primary);
+    outline: none;
+    border: none;
+    box-shadow: 0 12px 10px black;
+    transition: transform 0.2s ease;
+}
+
+.button-resume:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 /* Medium Screen */

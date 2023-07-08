@@ -1,6 +1,6 @@
 import './AboutMe.css'
 import EngineerCard from './EngineerCard';
-import jobs from '../assets/tech/jobs';
+import jobs from '../assets/jobs';
 import { v4 as uuidv4 } from 'uuid';
 
 

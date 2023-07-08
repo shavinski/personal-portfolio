@@ -1,0 +1,6 @@
+.social-logo {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    color: var(--secondary-light);
+}

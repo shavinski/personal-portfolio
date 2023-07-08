@@ -1,6 +1,6 @@
 import './Projects.css'
 import ProjectCard from './ProjectCard';
-import projects from '../assets/tech/projects';
+import projects from '../assets/projects'
 import { v4 as uuidv4 } from 'uuid';
 
 function Projects() {
@@ -18,10 +18,7 @@ function Projects() {
                 {projects.map((project) => (
                     <ProjectCard
                         key={uuidv4()}
-                        image={project.image}
-                        title={project.title}
-                        description={project.description}
-                        note={project.note} />
+                        project={project} />
                 ))}
 
             </div>

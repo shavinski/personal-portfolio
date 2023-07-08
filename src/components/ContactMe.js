@@ -4,18 +4,23 @@ import ContactInfoCard from './ContactInfoCard';
 import { contactInfo } from '../assets/socials';
 import { v4 as uuidv4 } from 'uuid';
 
+import { motion } from "framer-motion";
+
 function ContactMe() {
     return (
         <section className="contact" id="contact">
-            <div className='number-section'>04</div>
-            <div className='connect-title title'>Contact Me</div>
+            <motion.div
+                initial={{ opacity: 0, y: 75 }}
+                whileInView={{ opacity: .7, y: 0 }}
+                transition={{ ease: "easeInOut", duration: .7 }}
+                className='number-section'>04</motion.div>
+            <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ ease: "easeInOut", duration: .7 }}
+                viewport={{ once: true }}
+                className='connect-title title'>Contact Me</motion.div>
             <div className='container-contact'>
-                <div className='container-contact-info'>
-                    {contactInfo.map((info) => (
-                        <ContactInfoCard key={uuidv4()} info={info} />
-                    ))}
-                </div>
-
                 <div className='container-form'>
                     <Form />
                 </div>

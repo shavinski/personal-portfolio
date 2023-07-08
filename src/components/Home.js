@@ -4,7 +4,7 @@ import SocialLogo from './SocialLogo'
 import { socials } from '../assets/socials'
 import { v4 as uuidv4 } from 'uuid';
 
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation, useScroll } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
@@ -15,24 +15,22 @@ function Home() {
     useEffect(() => {
         if (inView) {
             control.start("visible");
-        } else {
-            control.start("hidden")
-        }
+        } 
     }, [control, inView])
 
     const blobVariant = {
-        visible: { opacity: 1, scale: 1 },
-        hidden: { opacity: 0, scale: 0 },
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 100 },
     }
 
     const textVariant = {
-        visible: { opacity: 1, scale: 1, x: 0},
-        hidden: { opacity: 0, scale: 0, x: -400}
+        visible: { opacity: 1, y: 0},
+        hidden: { opacity: 0, y: 100}
     }
 
     const buttonVariant = {
         visible: { opacity: 1, scale: 1, y: 0 },
-        hidden: { opacity: 0, scale: 0, y: 100 },
+        hidden: { opacity: 0, scale: 0, y: 75 },
     }
 
     return (
@@ -81,6 +79,7 @@ function Home() {
                     initial="hidden"
                     animate={control}
                     transition={{ ease: "easeOut", duration: 1 }}
+                    whileInView={{ opacity: 1 }}
                     className='container-connect'>
                     <a className='connect' href='#contact'>
                         Lets connect

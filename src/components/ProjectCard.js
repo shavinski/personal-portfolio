@@ -1,25 +1,35 @@
 import './ProjectCard.css'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
 
 function ProjectCard({ project }) {
+  
     const cardImgStyle = {
         backgroundImage: `url(${project.image})`
     }
 
     return (
-        <div className='project-card'>
+        <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1,  y: 0  }}
+        transition={{ ease: "easeInOut", duration: .7 }}
+        viewport={{ once: true }}
+            className='project-card'>
             <div className='card-img' style={cardImgStyle}></div>
             <div className='card-info'>
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>
-                {project.note && 
-                <small className='note'>{project.note}</small>
+                {project.note &&
+                    <small className='note'>{project.note}</small>
                 }
                 <div className='link-container'>
-                    <a href={project.website} aria-label='Link for project website'  target='blank'><button className='card-btn'>Live</button></a>
+                    <a href={project.website} aria-label='Link for project website' target='blank'><button className='card-btn'>Live</button></a>
                     <a href={project.github} aria-label='Link for project github' target='blank'><button className='card-btn'>Code</button></a>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

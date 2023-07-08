@@ -38,15 +38,14 @@
     align-items: center;
     gap: 10px;
     padding: var(--p-2);
-    border-radius: 20px;
     margin: var(--m-2);
     font-size: var(--font-small);
     width: 150px;
-    background-color: var(--contrast);
-    color: var(--primary);
+    background-color: rgb(32, 32, 32);
+    color: white;
     outline: none;
     border: none;
-    box-shadow: 0 12px 10px black;
+    box-shadow: 0 3px 15px black;
     transition: transform 0.2s ease;
 }
 

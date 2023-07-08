@@ -1,10 +1,21 @@
-.contact-info{
+.contact-info {
     display: flex;
-    /* align-items: center */
     gap: 10px;
 }
 
 .sub-container {
     display: flex;
-    flex-direction: column;
+    font-size: clamp(.5em, 1vw + 1rem, .8em);
+}
+
+/* Medium Screen */
+@media screen and (max-width: 35em) {
+    /* .sub-container {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    } */
+
 }

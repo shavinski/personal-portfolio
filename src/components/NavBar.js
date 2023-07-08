@@ -29,12 +29,14 @@ function NavBar() {
       <div>
         <ul ref={navMenuRef} className="nav-menu">
           <div>
-            <li className="nav-item"><a href="#home" className="nav-link" onClick={hideNavMenu}>Home</a></li>
+            <ul>
+              <li className="nav-item"><a href="#home" aria-label='Link to go back to top of webpage also called home'className="nav-link" onClick={hideNavMenu}>Home</a></li>
+            </ul>
             <span className="nav-underline"></span>
           </div>
-          <li className="nav-item"><a href="#aboutme" className="nav-link" onClick={hideNavMenu}>About Me</a></li>
-          <li className="nav-item"><a href="#projects" className="nav-link" onClick={hideNavMenu}>Projects</a></li>
-          <li className="nav-item"><a href="#contact" className="nav-link" onClick={hideNavMenu}>Contact</a></li>
+          <li className="nav-item"><a href="#aboutme" aria-label='Link to go to about me section on webpage' className="nav-link" onClick={hideNavMenu}>About Me</a></li>
+          <li className="nav-item"><a href="#projects" aria-label='Link to go to projects section on webpage' className="nav-link" onClick={hideNavMenu}>Projects</a></li>
+          <li className="nav-item"><a href="#contact" aria-label='Link to go to contact me section on webpage' className="nav-link" onClick={hideNavMenu}>Contact</a></li>
         </ul>
         <div ref={hamburgerRef} className="hamburger" onClick={showHamburger}>
           <span className="bar"></span>

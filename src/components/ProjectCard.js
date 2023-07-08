@@ -15,8 +15,8 @@ function ProjectCard({ project }) {
                 <small className='note'>{project.note}</small>
                 }
                 <div className='link-container'>
-                    <a href={project.website} target='blank'><button className='card-btn'>Live</button></a>
-                    <a href={project.github} target='blank'><button className='card-btn'>Code</button></a>
+                    <a href={project.website} aria-label='Link for project website'  target='blank'><button className='card-btn'>Live</button></a>
+                    <a href={project.github} aria-label='Link for project github' target='blank'><button className='card-btn'>Code</button></a>
                 </div>
             </div>
         </div>

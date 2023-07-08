@@ -13,10 +13,10 @@ function Footer() {
                 </div>
                 <div className='footer-menu-links'>
                     <ul>
-                        <li className="footer-item"><a href="#home" className="footer-link">Home</a></li>
-                        <li className="footer-item"><a href="#aboutme" className="footer-link">About Me</a></li>
-                        <li className="footer-item"><a href="#projects" className="footer-link">Projects</a></li>
-                        <li className="footer-item"><a href="#contact" className="footer-link">Contact</a></li>
+                        <li className="footer-item"><a href="#home" aria-label='Link to go to home section on webpage' className="footer-link">Home</a></li>
+                        <li className="footer-item"><a href="#aboutme" aria-label='Link to go to about me section on webpage' className="footer-link">About Me</a></li>
+                        <li className="footer-item"><a href="#projects" aria-label='Link to go to projects section on webpage' className="footer-link">Projects</a></li>
+                        <li className="footer-item"><a href="#contact" aria-label='Link to go to contact me section on webpage' className="footer-link">Contact</a></li>
                     </ul>
                 </div>
                 <div className='container-socials'>

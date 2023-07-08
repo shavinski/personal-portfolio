@@ -1,33 +1,87 @@
 import './Home.css'
 import Blob from './Blob'
 import SocialLogo from './SocialLogo'
-import {socials} from '../assets/socials'
+import { socials } from '../assets/socials'
 import { v4 as uuidv4 } from 'uuid';
 
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
 function Home() {
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            control.start("visible");
+        } else {
+            control.start("hidden")
+        }
+    }, [control, inView])
+
+    const blobVariant = {
+        visible: { opacity: 1, scale: 1 },
+        hidden: { opacity: 0, scale: 0 },
+    }
+
+    const textVariant = {
+        visible: { opacity: 1, scale: 1, x: 0},
+        hidden: { opacity: 0, scale: 0, x: -400}
+    }
+
+    const buttonVariant = {
+        visible: { opacity: 1, scale: 1, y: 0 },
+        hidden: { opacity: 0, scale: 0, y: 100 },
+    }
+
     return (
         <section className="home" id="home">
             <div className="container-home">
                 <div className='container-profile'>
 
-                    <div className='container-photo'>
+                    <motion.div
+                        ref={ref}
+                        variants={blobVariant}
+                        initial="hidden"
+                        animate={control}
+                        transition={{ ease: "easeOut", duration: 1 }}
+                        className='container-photo'>
                         <Blob />
-                    </div>
+                    </motion.div>
 
-                    <div className='container-socials'>
+                    <motion.div
+                        ref={ref}
+                        variants={blobVariant}
+                        initial="hidden"
+                        animate={control}
+                        transition={{ ease: "easeOut", duration: 1 }}
+                        className='container-socials'>
                         {socials.map((s) => (
-                            <SocialLogo key={uuidv4()} social={s}/>
+                            <SocialLogo key={uuidv4()} social={s} />
                         ))}
-                    </div>
+                    </motion.div>
 
                 </div>
 
-                <div className='container-info'>
+                <motion.div
+                    ref={ref}
+                    variants={textVariant}
+                    initial="hidden"
+                    animate={control}
+                    transition={{ ease: "easeOut", duration: 1 }}
+                    className='container-info'>
                     <h1 className='info-intro'>Welcome my name is <span className='jakob'>Jakob</span></h1>
                     <p className='info-details'>I am a <span className='jakob'>full-stack engineer</span> with a passion for learning and exploring new technologies.</p>
-                </div>
+                </motion.div>
 
-                <div className='container-connect'>
+                <motion.div
+                    ref={ref}
+                    variants={buttonVariant}
+                    initial="hidden"
+                    animate={control}
+                    transition={{ ease: "easeOut", duration: 1 }}
+                    className='container-connect'>
                     <a className='connect' href='#contact'>
                         Lets connect
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-rocket-takeoff-fill" viewBox="0 0 16 16">
@@ -36,7 +90,7 @@ function Home() {
                         </svg>
                     </a>
 
-                </div>
+                </motion.div>
             </div>
         </section>
     )

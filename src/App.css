@@ -211,7 +211,8 @@ button {
   -webkit-text-stroke: 1px rgb(148, 157, 20);
   color: var(--contrast);
   margin: var(--m-4);
-  text-shadow: 0px 1px 30px rgb(228, 216, 49);
+  /* -webkit-box-shadow:0px 1px 30px rgb(228, 216, 49); */
+  text-shadow: 0 0 10px rgb(228, 216, 49);
   z-index: 3;
 }
 

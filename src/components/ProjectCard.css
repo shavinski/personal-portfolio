@@ -42,6 +42,7 @@
     cursor: pointer;
     background-color: var(--contrast);
     padding: 5px;
+    color: black;
     width: 70px;
     border-radius: 5px;
     margin: 10px 10px 0 0px;
@@ -53,6 +54,3 @@
     transform: scale(1.1);
 }
 
-.web-link {
-    color: black;
-}

@@ -1,8 +1,5 @@
 import './ProjectCard.css'
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-
+import { motion } from "framer-motion";
 
 function ProjectCard({ project }) {
   
@@ -25,8 +22,8 @@ function ProjectCard({ project }) {
                     <small className='note'>{project.note}</small>
                 }
                 <div className='link-container'>
-                    <a href={project.website} aria-label='Link for project website' target='blank'><button className='card-btn'>Live</button></a>
-                    <a href={project.github} aria-label='Link for project github' target='blank'><button className='card-btn'>Code</button></a>
+                    <a className='web-link' href={project.website} aria-label='Link for project website' target='blank'><button className='card-btn'>Live</button></a>
+                    <a className='web-link' href={project.github} aria-label='Link for project github' target='blank'><button className='card-btn'>Code</button></a>
                 </div>
             </div>
         </motion.div>

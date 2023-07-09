@@ -1,8 +1,7 @@
 import './EngineerCard.css'
 
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { motion } from "framer-motion";
+
 
 function EngineerCard({ job, svg }) {
 

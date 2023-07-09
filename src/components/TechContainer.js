@@ -1,7 +1,5 @@
 import React from "react";
 import './TechContainer.css'
-import { motion } from "framer-motion";
-
 
 function TechContainer({ name, svg }) {
     return (

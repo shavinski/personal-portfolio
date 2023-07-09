@@ -4,9 +4,8 @@
 <br />
 <div align="center">
   <h1 align="center">
-    Warbler!
+    Personal Portfolio Webpage
   </h1>
-  <p>A twitter clone.</p>
 </div>
 
 

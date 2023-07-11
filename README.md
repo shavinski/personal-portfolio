@@ -43,7 +43,7 @@
 - [x] Add scrolling animations
 - [ ] Add hover animations to buttons
 - [ ] Add hover animations to nav links
-- [ ] Adjust nav menu on mobile
+- [x] Adjust nav menu on mobile
 
 
 

@@ -7,7 +7,7 @@ form {
 .form-field {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 7px;
 }
 
 .form-input {
@@ -29,7 +29,7 @@ form {
     font-size: var(--font-small);
 }
 
-form button {
+.form-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,8 +42,14 @@ form button {
     color: white;
     font-size: 1.3em;
     margin-bottom: 2em;
+    cursor: pointer;
 }
 
 form button:hover {
     cursor: pointer;
+}
+
+.error-form {
+    margin: var(--m-1);
+    color: rgb(208, 70, 70);
 }

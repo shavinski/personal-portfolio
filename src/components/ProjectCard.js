@@ -9,8 +9,8 @@ function ProjectCard({ project }) {
 
     return (
         <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1,  y: 0  }}
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1,  x: 0  }}
         transition={{ ease: "easeInOut", duration: .7 }}
         viewport={{ once: true }}
             className='project-card'>

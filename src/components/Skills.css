@@ -46,12 +46,10 @@
     outline: none;
     border: none;
     box-shadow: 0 3px 15px black;
-    transition: transform 0.2s ease;
 }
 
 .button-resume:hover {
     cursor: pointer;
-    transform: scale(1.05);
 }
 
 /* Medium Screen */

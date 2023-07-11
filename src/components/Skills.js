@@ -107,8 +107,8 @@ function Skills() {
 
                 <a className='resume-link' target='blank' href={resume}>
                     <motion.button
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         transition={{ ease: "easeInOut", duration: .7 }}
                         viewport={{ once: true }}
                         className='button-resume'>Resume <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">

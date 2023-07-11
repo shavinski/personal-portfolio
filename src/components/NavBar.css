@@ -83,7 +83,7 @@
         gap: 0;
         height: 90vh;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         background-color: var(--primary);
         width: 100%;
         text-align: center;

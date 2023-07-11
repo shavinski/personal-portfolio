@@ -4,15 +4,14 @@ import './Form.css'
 import { motion } from "framer-motion";
 
 function Form() {
-    const startingData = {
+    const [errorMessages, setErrorMessages] = useState({})
+    const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: '',
-    }
-    const [formData, setFormData] = useState(startingData)
+    })
 
     function handleChange(evt) {
-        console.log(formData);
         const { name, value } = evt.target;
         setFormData(currData => ({
             ...currData,
@@ -22,10 +21,36 @@ function Form() {
 
     function handleSubmit(e) {
         e.preventDefault();
+
+        const errors = {}
+        // Email regex 
+        const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+        if (formData.name === '') {
+            errors.name = 'Please input your name!'
+        } else {
+            errors.name = ''
+        }
+
+        if (formData.email === '' || regex.test(formData.email) === false) {
+            errors.email = 'Please input a valid email!'
+        } else {
+            errors.email = ''
+        }
+
+        if (formData.message.length <= 9) {
+            errors.message = 'Please write a message longer than 10 characters!'
+        } else {
+            errors.message = ''
+        }
+
+        setErrorMessages({ ...errors })
+
+        if (errors.length > 0) return
     }
 
     return (
-        <form>
+        <form name='contact' netlify>
             <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -42,6 +67,7 @@ function Form() {
                     onChange={handleChange}
                     placeholder='Your name'
                     required ></input>
+                <span className='error-form'>{errorMessages.name}</span>
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, x: -60 }}
@@ -60,6 +86,8 @@ function Form() {
                     onChange={handleChange}
                     placeholder='Your email'
                     required ></input>
+                <span className='error-form'>{errorMessages.email}</span>
+
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, x: -70 }}
@@ -78,8 +106,11 @@ function Form() {
                     onChange={handleChange}
                     placeholder='What would you like to say?'
                     required ></textarea>
+                <span className='error-form'>{errorMessages.message}</span>
+
             </motion.div>
             <motion.button
+                className="form-button"
                 initial={{ opacity: 0, x: -80 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeInOut", duration: .7 }}

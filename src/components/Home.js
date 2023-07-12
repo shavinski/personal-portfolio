@@ -1,16 +1,20 @@
 import './Home.css'
 import Blob from './Blob'
 import SocialLogo from './SocialLogo'
+import spaceImage from '../images/deep-dark-space-destkop-backgrounds.webp'
 import { socials } from '../assets/socials'
-import { v4 as uuidv4 } from 'uuid';
 
+import { v4 as uuidv4 } from 'uuid';
 import { motion } from "framer-motion";
 
 function Home() {
 
+    const homeBackground = {
+        backgroundImage: `url(${spaceImage})`
+    }
 
     return (
-        <section className="home" id="home">
+        <section className="home" id="home" style={homeBackground}>
             <div className="container-home">
                 <div className='container-profile'>
 

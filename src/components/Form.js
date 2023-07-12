@@ -52,7 +52,9 @@ function Form() {
 
     return (
         <form name='contact' method='POST' data-netlify='true'>
+            {/* Netlify form */}
             <input type='hidden' name='form-name' value='contact'></input>
+
             <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}

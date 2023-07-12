@@ -53,15 +53,17 @@ function Form() {
 
         setErrorMessages({ ...errors })
 
-        if (errors.length > 0) return
+        if (errors.length > 0) {
+            console.log('send to netlify');
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({ "form-name": "contact", ...formData })
+            })
+                .then(() => alert("Success!"))
+                .catch(error => alert(error));
+        }
 
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...formData })
-        })
-            .then(() => alert("Success!"))
-            .catch(error => alert(error));
     }
 
     return (

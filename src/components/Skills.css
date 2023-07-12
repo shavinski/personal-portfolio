@@ -28,34 +28,3 @@
     padding: var(--p-2);
     box-shadow: 0 10px 15px black;
 }
-.resume-link {
-    text-decoration: none;
-}
-
-.button-resume {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: var(--p-2);
-    margin: var(--m-2);
-    font-size: var(--font-small);
-    width: 150px;
-    background-color: rgb(32, 32, 32);
-    color: white;
-    outline: none;
-    border: none;
-    box-shadow: 0 3px 15px black;
-}
-
-.button-resume:hover {
-    cursor: pointer;
-}
-
-/* Medium Screen */
-@media screen and (min-width: 48em) {
-    /* .container-coding-langs {
-         max-width: 40%; 
-    } */
-
-}

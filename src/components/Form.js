@@ -110,7 +110,7 @@ function Form() {
 
             </motion.div>
             <motion.button
-                className="form-button"
+                className="form-button slide-right"
                 initial={{ opacity: 0, x: -80 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeInOut", duration: .7 }}

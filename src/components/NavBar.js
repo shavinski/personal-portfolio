@@ -32,7 +32,6 @@ function NavBar() {
             <ul>
               <li className="nav-item"><a href="#home" aria-label='Link to go back to top of webpage also called home' className="nav-link" onClick={hideNavMenu}>Home</a></li>
             </ul>
-            <span className="nav-underline"></span>
           </div>
           <li className="nav-item"><a href="#aboutme" aria-label='Link to go to about me section on webpage' className="nav-link" onClick={hideNavMenu}>About Me</a></li>
           <li className="nav-item"><a href="#skills" aria-label='Link to go to skills section on webpage' className="nav-link" onClick={hideNavMenu}>Skills</a></li>

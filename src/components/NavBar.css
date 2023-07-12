@@ -34,24 +34,31 @@
     font-size: var(--font-small);
 }
 
-.nav-underline {
-    width: 10px;
-    color: var(--contrast);
-}
-
 .nav-link {
     text-decoration: none;
-    color: var(--yellow-accent);
+    color: white;
+    position: relative;
     transition: .4s;
     padding: .3em;
     border-radius: 10px;
     transition: .4s ease-out;
 }
 
-.nav-link:hover {
-    color: var(--purple-main);
-    background-color: var(--yellow-accent);
-    transition: .4s ease-in;
+.nav-link::after {
+    content: "";
+    position: absolute;
+    background-color: var(--contrast);
+    height: 3px;
+    border-radius: 10px;
+    display: block;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
 }
 
 .hamburger {

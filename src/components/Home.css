@@ -7,6 +7,7 @@
 }
 
 .container-home {
+    position: relative;
     padding-top: 10vh;
     height: 90vh;
     display: flex;
@@ -59,6 +60,9 @@
 }
 
 .connect {
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
     text-decoration: none;
     color: white;
     margin: var(--m-3);
@@ -74,4 +78,5 @@
 
 .connect:hover {
     cursor: pointer;
+    top: -5px;
 }

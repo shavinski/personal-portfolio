@@ -48,12 +48,20 @@ function Form() {
         setErrorMessages({ ...errors })
 
         if (errors.length > 0) return
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...this.state })
+        })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
     }
 
     return (
-        <form name='contact' method='POST' data-netlify='true'>
+        <form name='contact-netlify' method='POST' data-netlify='true'>
             {/* Netlify form */}
-            <input type='hidden' name='form-name' value='contact'></input>
+            <input type='hidden' name='form-name' value='contact-netlify'></input>
 
             <motion.div
                 initial={{ opacity: 0, x: -50 }}

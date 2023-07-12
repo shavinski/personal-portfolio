@@ -62,7 +62,7 @@
 .connect {
     position: relative;
     top: 0;
-    transition: top ease 0.3s;
+    transition: top ease 0.2s;
     text-decoration: none;
     color: white;
     margin: var(--m-3);

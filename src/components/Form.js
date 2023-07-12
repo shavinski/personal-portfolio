@@ -11,6 +11,12 @@ function Form() {
         message: '',
     })
 
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    }
+
     function handleChange(evt) {
         const { name, value } = evt.target;
         setFormData(currData => ({
@@ -52,16 +58,16 @@ function Form() {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...this.state })
+            body: encode({ "form-name": "contact", ...formData })
         })
             .then(() => alert("Success!"))
             .catch(error => alert(error));
     }
 
     return (
-        <form name='contact-netlify' method='POST' data-netlify='true'>
+        <form name='contact' method='POST' data-netlify='true'>
             {/* Netlify form */}
-            <input type='hidden' name='form-name' value='contact-netlify'></input>
+            <input type='hidden' name='form-name' value='contact'></input>
 
             <motion.div
                 initial={{ opacity: 0, x: -50 }}

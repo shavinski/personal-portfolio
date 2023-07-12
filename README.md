@@ -41,8 +41,8 @@
 ## Roadmap
 
 - [x] Add scrolling animations
-- [ ] Add hover animations to buttons
-- [ ] Add hover animations to nav links
+- [x] Add hover animations to buttons
+- [x] Add hover animations to nav links
 - [x] Adjust nav menu on mobile
 
 
@@ -52,7 +52,7 @@
 <!-- CONTACT -->
 ## Contact
 
-Email: shavinski.dev@gmail.com
+Email: shavinski.jakob@gmail.com
 
 LinkedIn: https://www.linkedin.com/in/jakob-shavinski/
 

@@ -52,7 +52,7 @@
 <!-- CONTACT -->
 ## Contact
 
-Email: shavinski.dev@gmail.com
+Email: shavinski.jakob@gmail.com
 
 LinkedIn: https://www.linkedin.com/in/jakob-shavinski/
 

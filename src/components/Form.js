@@ -53,7 +53,7 @@ function Form() {
 
         setErrorMessages({ ...errors })
 
-        if (errors.length > 0) {
+        if (Object.values(errors).every(error => error === '')) {
             console.log('send to netlify');
             fetch("/", {
                 method: "POST",

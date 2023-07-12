@@ -163,11 +163,15 @@ table {
 
 @font-face {
   font-family: Russo;
+  font-display: swap;
+  font-style: normal;
   src: url(./fonts/RussoOne-Regular.ttf);
 }
 
 @font-face {
   font-family: Starwars;
+  font-display: swap;
+  font-style: normal;
   src: url(./fonts/Rubik-VariableFont_wght.ttf);
 }
 

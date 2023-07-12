@@ -14,7 +14,7 @@ function ProjectCard({ project }) {
         transition={{ ease: "easeInOut", duration: .7 }}
         viewport={{ once: true }}
             className='project-card'>
-            <div className='card-img' style={cardImgStyle}></div>
+            <div className='card-img lazyload' style={cardImgStyle}></div>
             <div className='card-info'>
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>

@@ -19,7 +19,7 @@ function Home() {
                 <div className='container-profile'>
 
                     <motion.div
-                        initial={{ opacity: 0, y: -60 }}
+                        initial={{ opacity: 0, y: -70 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ ease: "easeInOut", duration: .7 }}
                         viewport={{ once: true }}

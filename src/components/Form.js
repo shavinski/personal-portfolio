@@ -114,7 +114,8 @@ function Form() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeInOut", duration: .7 }}
                 viewport={{ once: true }}
-                htmlFor="message" className='form-field'>
+                htmlFor="message" 
+                className='form-field'>
                 <label className='form-label'>Message</label>
                 <textarea
                     className='form-input'

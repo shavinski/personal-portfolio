@@ -14,14 +14,14 @@ function ContactMe() {
                 className='number-section'>
                 04
             </motion.div>
-            <motion.div
+            <motion.h2
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ ease: "easeInOut", duration: .7 }}
                 viewport={{ once: true }}
                 className='connect-title title'>
                 Contact Me
-            </motion.div>
+            </motion.h2>
             <div className='container-contact'>
                 <div className='container-form'>
                     <Form />

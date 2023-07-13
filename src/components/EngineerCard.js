@@ -13,7 +13,7 @@ function EngineerCard({ job, svg }) {
             viewport={{ once: true }}
             className='container-engineer-card'>
             {svg}
-            <h3>{job}</h3>
+            <p>{job}</p>
         </motion.div>
     )
 }

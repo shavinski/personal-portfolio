@@ -22,9 +22,10 @@
     box-shadow: 0 10px 15px black;
 }
 
-.card-info h2 {
+.card-info h3 {
     font-size: var(--font-medium);
     margin-bottom: 12px;
+    letter-spacing: 1px;
 }
 
 .card-info p {
@@ -32,9 +33,10 @@
     margin-bottom: 8px;
 }
 
-.card-info small {
+.note {
     font-style: italic;
 }
+
 
 .card-btn {
     border: none;
@@ -47,7 +49,8 @@
     border-radius: 5px;
     margin: 10px 10px 0 0px;
     font-size: var(--font-small);
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
+    letter-spacing: 2px;
 }
 
 .card-btn:hover {

@@ -16,10 +16,10 @@ function ProjectCard({ project }) {
             className='project-card'>
             <div className='card-img lazyload' style={cardImgStyle}></div>
             <div className='card-info'>
-                <h2>{project.title}</h2>
+                <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 {project.note &&
-                    <small className='note'>{project.note}</small>
+                    <p className='note'>{project.note}</p>
                 }
                 <div className='link-container'>
                     <a className='web-link' href={project.website} aria-label='Link for project website' target='blank'><button className='card-btn'>Live</button></a>

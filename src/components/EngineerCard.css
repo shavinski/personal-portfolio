@@ -10,7 +10,7 @@
     border-radius: 20px;
 }
 
-.container-back-end h3,
-.container-front-end h3 {
+.container-back-end p,
+.container-front-end p {
     font-size: var(--font-small);
 }

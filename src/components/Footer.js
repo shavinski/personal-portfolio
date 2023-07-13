@@ -7,11 +7,11 @@ import { v4 as uuidv4 } from 'uuid';
 
 function Footer() {
     return (
-        <section className="footer" id="footer">
+        <footer className="footer" id="footer">
             <div className="container-footer">
                 <div>
-                    <p className='footer-name'>Jakob Shavinski ©2023</p>
-                    <p className='footer-title'>Fullstack Engineer</p>
+                    <h2 className='footer-name'>Jakob Shavinski ©2023</h2>
+                    <h2 className='footer-title'>Fullstack Engineer</h2>
                 </div>
                 <div className='container-socials'>
                     {socials.map((s) => (
@@ -24,7 +24,7 @@ function Footer() {
                     ))}
                 </div>
             </div>
-        </section>
+        </footer>
     )
 }
 

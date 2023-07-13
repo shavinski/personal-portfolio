@@ -16,7 +16,7 @@
     line-height: 30px;
 }
 
-.container-about-info h3 {
+.container-about-info p {
     font-size: var(--font-small);
 }
 

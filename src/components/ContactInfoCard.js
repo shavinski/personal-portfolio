@@ -5,8 +5,8 @@ function ContactInfoCard({ info }) {
         <div className='contact-info'>
             {info.svg}
             <div className='sub-container'>
-                <h1>{info.title}</h1>
-                <p>{info.info}</p>
+                <h2>{info.title}</h2>
+                <h3>{info.info}</h3>
             </div>
         </div>
     )

@@ -11,9 +11,9 @@ function EngineerCard({ job, svg }) {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ ease: "easeInOut", duration: .7 }}
             viewport={{ once: true }}
-            className='container-front-end'>
+            className='container-engineer-card'>
             {svg}
-            <p>{job}</p>
+            <h3>{job}</h3>
         </motion.div>
     )
 }

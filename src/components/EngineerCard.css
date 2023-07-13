@@ -1,0 +1,16 @@
+.container-engineer-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-standard);
+    background-color: var(--secondary-middle);
+    box-shadow: 0 8px 20px black;
+    padding: var(--p-4);
+    border-radius: 20px;
+}
+
+.container-back-end h3,
+.container-front-end h3 {
+    font-size: var(--font-small);
+}

@@ -24,7 +24,7 @@ function NavBar() {
       <nav ref={navRef} className="container-navbar">
         <ul className="container-logo">
           <li>
-            <a className='home-link' href="#home" aria-label='Go back to top of webpage' onClick={hideNavMenu}>
+            <a className='home-link' href="#home" aria-label='Go back to top of webpage'>
               <div className="navbar-name"><span className="navbar-initial">J</span>akob <span className="navbar-initial">S</span>havinski</div>
             </a>
           </li>

@@ -22,20 +22,19 @@ function NavBar() {
   return (
     <header>
       <nav ref={navRef} className="container-navbar">
-        <div className="container-logo">
-          <div className="navbar-name"><span className="navbar-initial">J</span>akob <span className="navbar-initial">S</span>havinski</div>
-        </div>
+        <ul className="container-logo">
+          <li>
+            <a className='home-link' href="#home" aria-label='Go back to top of webpage' onClick={hideNavMenu}>
+              <div className="navbar-name"><span className="navbar-initial">J</span>akob <span className="navbar-initial">S</span>havinski</div>
+            </a>
+          </li>
+        </ul>
         <div>
           <ul ref={navMenuRef} className="nav-menu">
-            <div>
-              <ul>
-                <li className="nav-item"><a href="#home" aria-label='Link to go back to top of webpage also called home' className="nav-link" onClick={hideNavMenu}>Home</a></li>
-              </ul>
-            </div>
-            <li className="nav-item"><a href="#aboutme" aria-label='Link to go to about me section on webpage' className="nav-link" onClick={hideNavMenu}>About Me</a></li>
-            <li className="nav-item"><a href="#skills" aria-label='Link to go to skills section on webpage' className="nav-link" onClick={hideNavMenu}>Skills</a></li>
-            <li className="nav-item"><a href="#projects" aria-label='Link to go to projects section on webpage' className="nav-link" onClick={hideNavMenu}>Projects</a></li>
-            <li className="nav-item"><a href="#contact" aria-label='Link to go to contact me section on webpage' className="nav-link" onClick={hideNavMenu}>Contact</a></li>
+            <li className="nav-item"><a href="#aboutme" aria-label='Go to about me' className="nav-link" onClick={hideNavMenu}>About Me</a></li>
+            <li className="nav-item"><a href="#skills" aria-label='Go to skills' className="nav-link" onClick={hideNavMenu}>Skills</a></li>
+            <li className="nav-item"><a href="#projects" aria-label='Go to projects' className="nav-link" onClick={hideNavMenu}>Projects</a></li>
+            <li className="nav-item"><a href="#contact" aria-label='Go to contact me' className="nav-link" onClick={hideNavMenu}>Contact</a></li>
           </ul>
           <div ref={hamburgerRef} className="hamburger" onClick={showHamburger}>
             <span className="bar"></span>

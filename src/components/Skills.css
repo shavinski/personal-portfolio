@@ -20,11 +20,22 @@
 
 .container-languages {
     display: grid;
-    /* Played around till things were even in grid containers this works */
-    grid-template-columns: repeat(auto-fit, min(47%, 153px));
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     background-color: var(--secondary-middle);
     border-radius: 20px;
     padding: var(--p-2);
     box-shadow: 0 10px 15px black;
+}
+
+@media screen and (max-width: 40em) {
+    .container-languages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 21em) {
+    .container-languages {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

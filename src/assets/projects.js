@@ -8,7 +8,7 @@ const projects = [
         title: 'Jobly',
         description: 'A job searching app where users can login, search for companies, and search for open jobs!',
         note: 'Note that I am using a free online cloud database so my projects will require 10-30 seconds to load upon start',
-        website: "http://jobly.shavinski.surge.sh/",
+        website: "https://shavinski-jobly.surge.sh/",
         github: "https://github.com/shavinski/react-jobly",
     },
 

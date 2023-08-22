@@ -37,23 +37,22 @@
     font-style: italic;
 }
 
-
 .card-btn {
+    display: inline-block;
     border: none;
+    text-decoration: none;
     outline: none;
     cursor: pointer;
     background-color: var(--contrast);
     padding: 5px;
     color: black;
-    width: 70px;
     border-radius: 5px;
-    margin: 10px 10px 0 0px;
+    margin: 10px 10px 0 0;
     font-size: var(--font-small);
     transition: transform 0.3s ease;
     letter-spacing: 2px;
 }
 
 .card-btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.05) translateZ(0);
 }
-

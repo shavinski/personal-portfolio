@@ -17,7 +17,7 @@ const projects = [
         title: 'Warbler',
         description: 'A twitter clone which allows users to login, make posts, and follow other users!',
         note: 'Note that I am using a free online cloud database so my projects will require 10-30 seconds to load upon start',
-        website: "https://shavinski-warbler.onrender.com",
+        website: "https://shavinski-warbler-3hci.onrender.com",
         github: "https://github.com/shavinski/flask-warbler",
     }
 
